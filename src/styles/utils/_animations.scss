@@ -1,0 +1,59 @@
+@keyframes openSection {
+  from {
+    width: 5vw;
+  }
+  to {
+    width: 85vw;
+  }
+}
+
+@keyframes openSectionMobile {
+  to {
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+}
+
+@keyframes closeSection {
+  from {
+    width: 85vw;
+  }
+  to {
+    width: 5vw;
+  }
+}
+
+@keyframes closeSectionMobile {
+  from {
+    width: 100%;
+    opacity: 0.1;
+  }
+  to {
+    width: 50%;
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes moveRight {
+  0%,
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  50% {
+    opacity: 0.5;
+    transform: translatex(8px);
+  }
+}

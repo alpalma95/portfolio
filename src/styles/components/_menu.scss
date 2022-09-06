@@ -1,0 +1,29 @@
+@use "../utils/variables" as *;
+@use "../utils/animations" as *;
+
+.none {
+  display: none;
+}
+
+.block {
+  display: block;
+  animation: fadeIn 1s ease-out;
+  animation-fill-mode: forwards;
+}
+
+.menu {
+  position: fixed;
+  top: 15px;
+  right: 15px;
+  font-size: 3rem;
+  z-index: 4;
+  animation: moveRight 1s ease;
+  animation-iteration-count: infinite;
+  cursor: pointer;
+}
+
+@media (min-width: $screen-big) {
+  .menu {
+    display: none;
+  }
+}

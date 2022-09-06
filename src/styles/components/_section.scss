@@ -1,0 +1,106 @@
+@use "../utils/animations" as *;
+@use "../utils/variables" as *;
+
+.section {
+  display: flex;
+  width: 5vw;
+  height: 100vh;
+  position: sticky;
+  cursor: pointer;
+
+  h1 {
+    font-family: $font-body;
+    transform: rotate(90deg);
+    transform-origin: bottom left;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    width: 100%;
+    height: fit-content;
+    margin-bottom: auto;
+    margin-top: 10vh;
+    margin-left: 25%;
+
+    font-size: $font-body-big;
+  }
+
+  &--active {
+    animation: openSection 0.2s ease-out;
+    animation-fill-mode: forwards;
+    height: 100vh;
+    cursor: default;
+    padding: 2rem;
+    overflow: scroll;
+
+    h1 {
+      font-family: $font-titles;
+      font-size: $font-titles-big;
+      display: block;
+      width: fit-content;
+      opacity: 0;
+      transform: rotate(0);
+      width: 100%;
+      margin: 0;
+      animation: fadeIn 1s ease-out;
+      animation-delay: 0.2s;
+      animation-fill-mode: forwards;
+    }
+  }
+
+  &--inactive {
+    animation: closeSection 0.2s ease-out;
+    animation-fill-mode: forwards;
+  }
+}
+
+@media (max-width: $screen-small) {
+  .section {
+    display: flex;
+    width: 50vw;
+    height: 50vh;
+    position: absolute;
+    cursor: pointer;
+
+    h1 {
+      font-family: $font-body;
+      transform: none;
+      display: block;
+      justify-content: center;
+      align-content: center;
+      width: 100%;
+      height: fit-content;
+      margin: 0;
+
+      font-size: $font-body-big;
+    }
+
+    &--active {
+      animation: openSectionMobile 0.2s ease-out;
+      animation-fill-mode: forwards;
+      height: 100vh;
+      cursor: default;
+      padding: 2rem;
+      overflow: scroll;
+      z-index: 2;
+
+      h1 {
+        font-family: $font-titles;
+        font-size: $font-titles-big;
+        display: block;
+        width: fit-content;
+        opacity: 0;
+        transform: rotate(0);
+        width: 100%;
+        margin: 0;
+        animation: fadeIn 1s ease-out;
+        animation-delay: 0.2s;
+        animation-fill-mode: forwards;
+      }
+    }
+
+    &--inactive {
+      animation: closeSectionMobile 0.2s ease-out;
+      animation-fill-mode: forwards;
+    }
+  }
+}
