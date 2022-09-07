@@ -1,6 +1,8 @@
+import AboutContent from "../components/about/AboutContent.jsx";
+
 const About = ({ active, setActiveSection, setShowMenu }) => {
   return (
-    <div
+    <section
       className={`about section ${
         active ? "section--active" : "section--inactive"
       }`}
@@ -9,8 +11,9 @@ const About = ({ active, setActiveSection, setShowMenu }) => {
         setShowMenu(true);
       }}
     >
-      <h1>About</h1>
-    </div>
+      {active ? <></> : <h1>About</h1>}
+      {active ? <AboutContent /> : <></>}
+    </section>
   );
 };
 

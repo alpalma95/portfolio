@@ -1,9 +1,10 @@
 @use "../utils/animations" as *;
 @use "../utils/variables" as *;
+@use "../utils/mixins" as *;
 
 .section {
   display: flex;
-  width: 5vw;
+  flex-direction: column;
   height: 100vh;
   position: sticky;
   cursor: pointer;
@@ -53,9 +54,10 @@
   }
 }
 
-@media (max-width: $screen-small) {
+@include screen-small {
   .section {
-    display: flex;
+    display: grid;
+    place-content: center;
     width: 50vw;
     height: 50vh;
     position: absolute;
@@ -75,6 +77,7 @@
     }
 
     &--active {
+      display: block;
       animation: openSectionMobile 0.2s ease-out;
       animation-fill-mode: forwards;
       height: 100vh;
@@ -85,7 +88,7 @@
 
       h1 {
         font-family: $font-titles;
-        font-size: $font-titles-big;
+        font-size: $font-titles-small;
         display: block;
         width: fit-content;
         opacity: 0;
