@@ -1,3 +1,6 @@
+import "../styles/components/_section.scss";
+import "../styles/pages/_tech.scss";
+
 const Tech = ({ active, setActiveSection, setShowMenu }) => {
   return (
     <div

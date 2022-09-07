@@ -1,3 +1,5 @@
+import "../styles/components/_menu.scss";
+
 const Menu = ({ showMenu, setActiveSection, setShowMenu }) => {
   return (
     <div

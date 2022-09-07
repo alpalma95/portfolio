@@ -1,3 +1,6 @@
+import "../styles/components/_section.scss";
+import "../styles/pages/_projects.scss";
+
 const Projects = ({ active, setActiveSection, setShowMenu }) => {
   return (
     <section

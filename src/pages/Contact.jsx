@@ -1,3 +1,6 @@
+import "../styles/components/_section.scss";
+import "../styles/pages/_contact.scss";
+
 const Contact = ({ active, setActiveSection, setShowMenu }) => {
   return (
     <div

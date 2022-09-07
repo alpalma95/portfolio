@@ -5,6 +5,7 @@ import Projects from "./pages/Projects.jsx";
 import Tech from "./pages/Tech.jsx";
 import Contact from "./pages/Contact.jsx";
 import Menu from "./components/Menu.jsx";
+import "./styles/_app.scss";
 
 function App() {
   const [activeSection, setActiveSection] = useState("about");
