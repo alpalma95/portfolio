@@ -1,0 +1,30 @@
+@use "../utils/variables" as *;
+@use "../utils/mixins" as *;
+
+.contact__btn {
+  @include fadeInFromLeft;
+  width: 90%;
+  padding: 2rem 5rem;
+  max-width: 30rem;
+  text-decoration: none;
+  color: $color-black;
+  font-family: $font-body;
+  font-size: $font-body-xl;
+  display: grid;
+  place-content: center;
+  margin: 4rem auto;
+  border: 4px dashed $color-black;
+  cursor: pointer;
+  transition: all 0.2s;
+
+  i {
+    display: block;
+    margin: 1rem auto;
+  }
+
+  &:hover {
+    outline: 4px solid $color-black;
+    background-color: black;
+    color: $color-white;
+  }
+}
