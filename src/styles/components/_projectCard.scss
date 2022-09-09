@@ -1,0 +1,84 @@
+@use "../utils/variables" as *;
+@use "../utils/mixins" as *;
+
+.project-card {
+  position: relative;
+  margin-top: 15rem;
+  display: flex;
+  justify-content: space-between;
+  padding: 5rem;
+  font-family: $font-body;
+
+  border: 2px dashed $color-black;
+
+  &:hover {
+    .img--1 {
+      transform: rotate(10deg) translate(15px, -15px);
+      box-shadow: -15px 15px 20px rgba($color-black, 0.2);
+    }
+
+    .img--2 {
+      transform: rotate(-10deg) translate(-15px, -15px);
+      box-shadow: 15px 15px 20px rgba($color-black, 0.2);
+    }
+  }
+
+  &__info {
+    width: 60%;
+    padding-left: 1rem;
+
+    h3 {
+      font-size: $font-body-big;
+      margin-bottom: 1rem;
+    }
+
+    &__tech {
+      margin-top: 0.5rem;
+      font-size: $font-body-xs;
+
+      span {
+        display: inline-block;
+        margin-left: 0.5rem;
+        border: 1px dashed $color-black;
+        padding: 0.2rem 0.5rem;
+      }
+    }
+
+    &__btn {
+      display: inline-block;
+      border: 2px dashed $color-black;
+      padding: 0.7rem 1.7rem;
+      margin-right: 2rem;
+      margin-top: 2rem;
+
+      &--live {
+        background-color: $color-black;
+        color: $color-white;
+      }
+    }
+  }
+}
+
+@include screen-small {
+  .project-card {
+    margin-top: 2rem;
+    flex-direction: column;
+    padding: 0;
+
+    &__info {
+      padding: 2rem 0.5rem;
+      width: 100%;
+      text-align: start;
+
+      &__btn {
+        margin-right: 1rem;
+        padding: 0.2rem 0.8rem;
+        font-size: $font-body-small;
+      }
+
+      &__description {
+        width: 100%;
+      }
+    }
+  }
+}

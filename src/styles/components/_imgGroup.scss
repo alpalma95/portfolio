@@ -1,0 +1,49 @@
+@use "../utils/mixins" as *;
+
+.img-group {
+  width: 35%;
+  position: relative;
+  margin-right: 1rem;
+
+  img {
+    width: min(100%, 13rem);
+    position: absolute;
+    bottom: -20px;
+    transition: all 0.2s;
+  }
+
+  .img--1 {
+    z-index: 2;
+    transform: rotate(10deg);
+    transform-origin: bottom center;
+  }
+
+  .img--2 {
+    z-index: 1;
+    transform: rotate(-10deg);
+    transform-origin: bottom center;
+  }
+}
+
+@include screen-small {
+  .img-group {
+    width: 100%;
+
+    img {
+      position: relative;
+      transform: rotate(0);
+    }
+
+    .img--1 {
+      position: absolute;
+      left: 10%;
+      z-index: 2;
+      transform: rotate(0);
+    }
+
+    .img--2 {
+      z-index: 1;
+      transform: rotate(0);
+    }
+  }
+}
