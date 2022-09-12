@@ -12,7 +12,9 @@ const Tech = ({ active, setActiveSection, setShowMenu }) => {
         setShowMenu(true);
       }}
     >
-      <h1>Tech</h1>
+      <div className="about__h1">
+        <h1>Tech</h1>
+      </div>
     </div>
   );
 };

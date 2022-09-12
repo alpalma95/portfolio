@@ -13,7 +13,10 @@ const About = ({ active, setActiveSection, setShowMenu }) => {
         setShowMenu(true);
       }}
     >
-      {active ? <></> : <h1>About</h1>}
+      <div className="about__h1">
+        <h1>About</h1>
+      </div>
+
       {active ? <AboutContent /> : <></>}
     </section>
   );

@@ -33,7 +33,9 @@ const Contact = ({ active, setActiveSection, setShowMenu }) => {
         setShowMenu(true);
       }}
     >
-      <h1>Contact</h1>
+      <div className="about__h1">
+        <h1>Contact</h1>
+      </div>
       {active ? contactContent : <></>}
     </div>
   );

@@ -8,7 +8,7 @@ import Menu from "./components/Menu.jsx";
 import "./styles/_app.scss";
 
 function App() {
-  const [activeSection, setActiveSection] = useState("about");
+  const [activeSection, setActiveSection] = useState("projects");
   const [showMenu, setShowMenu] = useState(true);
 
   return (
@@ -18,18 +18,19 @@ function App() {
         setActiveSection={setActiveSection}
         setShowMenu={setShowMenu}
       />
-      <About
-        active={activeSection === "about"}
-        setActiveSection={setActiveSection}
-        setShowMenu={setShowMenu}
-      />
       <Projects
         active={activeSection === "projects"}
         setActiveSection={setActiveSection}
         setShowMenu={setShowMenu}
       />
+
       <Tech
         active={activeSection === "tech"}
+        setActiveSection={setActiveSection}
+        setShowMenu={setShowMenu}
+      />
+      <About
+        active={activeSection === "about"}
         setActiveSection={setActiveSection}
         setShowMenu={setShowMenu}
       />

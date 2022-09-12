@@ -2,6 +2,9 @@
 @use "../utils/mixins" as *;
 
 .project-card {
+  @include fadeIn;
+  @include wrapper;
+
   position: relative;
   margin-top: 15rem;
   display: flex;
