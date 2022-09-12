@@ -1,0 +1,20 @@
+@use "../utils/variables" as *;
+
+.tech-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-top: 4rem;
+
+  .tech-card {
+    width: 10rem;
+    border: 2px dashed $color-black;
+    padding: 2rem;
+
+    &__img-wrapper {
+      img {
+        width: 100%;
+      }
+    }
+  }
+}
