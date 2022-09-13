@@ -26,9 +26,25 @@
   animation-fill-mode: forwards;
   animation-delay: 0.3s;
 }
+
+@mixin fadeInFromLeftDelay {
+  opacity: 0;
+  animation: fadeInFromLeft 0.3s ease-out;
+  animation-fill-mode: forwards;
+  animation-delay: 0.5s;
+}
 @mixin fadeIn {
   opacity: 0;
   animation: fadeIn 0.3s ease-out;
   animation-fill-mode: forwards;
   animation-delay: 0.3s;
+}
+
+@mixin titleSmall {
+  width: fit-content;
+  display: block;
+  font-family: $font-titles;
+  font-size: $font-titles-xs;
+  margin-top: 4rem;
+  border-bottom: 2px dashed;
 }

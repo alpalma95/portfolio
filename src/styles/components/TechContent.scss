@@ -1,19 +1,79 @@
 @use "../utils/variables" as *;
+@use "../utils/mixins" as *;
 
 .tech-content {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 2rem;
-  margin-top: 4rem;
+  &__stack {
+    margin-top: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+    @include fadeInFromLeftDelay;
+
+    @include screen-small {
+      gap: 1rem;
+    }
+  }
+
+  &__h2-left {
+    @include titleSmall;
+    @include fadeIn;
+    border-color: $color-white;
+  }
+
+  &__h2-right {
+    @include titleSmall;
+    @include fadeIn;
+    border-color: $color-red;
+    margin-left: auto;
+  }
+
+  &__p-left,
+  &__p-right {
+    @include fadeIn;
+    margin-top: 1rem;
+    font-family: $font-body;
+    font-size: $font-body-small;
+  }
+
+  &__p-right {
+    text-align: end;
+  }
 
   .tech-card {
     width: 10rem;
-    border: 2px dashed $color-black;
-    padding: 2rem;
+    padding: 1rem;
+    display: flex;
+    margin-top: 1.5rem;
+
+    flex-direction: column;
+    justify-content: space-between;
+
+    @include screen-small {
+      width: 6rem;
+      padding: 0;
+    }
 
     &__img-wrapper {
+      display: grid;
+      place-content: center;
+      height: 70%;
       img {
         width: 100%;
+      }
+    }
+
+    &__title {
+      width: 100%;
+      text-align: center;
+      font-family: $font-body;
+      font-size: $font-body-big;
+      border: 2px dashed $color-black;
+      padding: 0.1rem;
+
+      @include screen-small {
+        font-size: $font-body-xs;
+        border: 1px dashed $color-black;
       }
     }
   }
