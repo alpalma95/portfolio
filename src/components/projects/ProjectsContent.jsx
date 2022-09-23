@@ -6,6 +6,8 @@ import todoWeb from "../../assets/todo-web.png";
 import todoMobile from "../../assets/todo-mobile.png";
 import portfolioWeb from "../../assets/portfolio-web.png";
 import portfolioMobile from "../../assets/portfolio-mobile.png";
+import portfolioGonWeb from "../../assets/portfolioGonWeb.png";
+import portfolioGonMobile from "../../assets/portfolioGonMobile.png";
 import Img from "../../components/projects/Img.jsx";
 import Socials from "../../components/projects/Socials.jsx";
 
@@ -62,6 +64,17 @@ const ProjectsContent = () => {
         ghLink="https://github.com/alpalma95/portfolio/"
         description="Fully responsive and dynamic portfolio site"
         tech={["React", "Sass"]}
+      />
+      <ProjectCard
+        title="Gonzalo Díaz Cobacho"
+        img1={portfolioGonWeb}
+        alt1="Preview on web of Gonzalo's portfolio"
+        img2={portfolioGonMobile}
+        alt2="Preview on mobile of Gonzalo's portfolio"
+        liveLink="https://gonzodico.vercel.app/"
+        ghLink="https://github.com/alpalma95/gon-portfolio"
+        description="Portfolio of a researcher"
+        tech={["Next.js", "Sass", "GraphQL"]}
       />
     </>
   );
