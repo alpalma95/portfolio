@@ -1,10 +1,6 @@
 @keyframes openSection {
   from {
-<<<<<<< HEAD
-    width: 3rem;
-=======
     width: min(5vw, 2.5rem);
->>>>>>> 3ddf8bd (fixed opening and closing mobile animations)
   }
   to {
     width: 100%;
@@ -15,10 +11,7 @@
   from {
     width: 50%;
     height: 50%;
-<<<<<<< HEAD
-=======
     opacity: 1;
->>>>>>> 3ddf8bd (fixed opening and closing mobile animations)
   }
   to {
     width: 100%;
@@ -31,11 +24,7 @@
     width: 100%;
   }
   to {
-<<<<<<< HEAD
-    width: 3rem;
-=======
     width: min(5vw, 2.5rem);
->>>>>>> 3ddf8bd (fixed opening and closing mobile animations)
   }
 }
 
@@ -43,20 +32,14 @@
   from {
     width: 100%;
     height: 100%;
-<<<<<<< HEAD
-    z-index: 4;
-=======
-    opacity: 0.1;
->>>>>>> 3ddf8bd (fixed opening and closing mobile animations)
+    // opacity: 0.1;
+    z-index: 10;
   }
   to {
     width: 50%;
     height: 50%;
-<<<<<<< HEAD
+    // opacity: 1;
     z-index: 1;
-=======
-    opacity: 1;
->>>>>>> 3ddf8bd (fixed opening and closing mobile animations)
   }
 }
 
