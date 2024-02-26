@@ -1,8 +1,6 @@
 import ProjectsContent from "../components/projects/ProjectsContent.jsx";
 
 import "../styles/components/_section.scss";
-import "../styles/pages/_projects.scss";
-import "../styles/pages/_about.scss";
 
 const Projects = ({ active, setActiveSection, setShowMenu }) => {
   return (

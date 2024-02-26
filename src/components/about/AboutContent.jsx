@@ -22,14 +22,11 @@ const AboutContent = () => {
 
       <p className="about__p">
         Long story short, my profile happened to be attractive for a company who
-        trusted my communication and social skills to assign me{" "}
-        <strong>IT</strong> recruiting functions. After looking at hundreds of
-        IT profiles, I realised what we all tend to discover eventually: there
-        is a vast diversity of people in the tech field, all of{" "}
-        <strike>
-          <span>them</span>
-        </strike>{" "}
-        us with different backgrounds. Some definitely not being math geniuses.
+        trusted my communication and social skills to assign me, among other
+        tasks, the maintenance of their website. It all started being related to
+        the content and, little by little, they were assigning me more
+        responsabilities code-wise, which paired pretty well with the
+        self-taught path I had started to learn web development.
       </p>
 
       <h2 className="about__h2 now">

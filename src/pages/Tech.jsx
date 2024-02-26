@@ -1,6 +1,4 @@
 import TechContent from "../components/tech/TechContent.jsx";
-import "../styles/components/_section.scss";
-import "../styles/pages/_tech.scss";
 
 const Tech = ({ active, setActiveSection, setShowMenu }) => {
   return (

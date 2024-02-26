@@ -1,6 +1,5 @@
 import AboutContent from "../components/about/AboutContent.jsx";
 import "../styles/components/_section.scss";
-import "../styles/pages/_about.scss";
 
 const About = ({ active, setActiveSection, setShowMenu }) => {
   return (
